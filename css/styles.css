@@ -1,0 +1,139 @@
+/*INFO: Css Variables */
+:root {
+  --main-color: rgb(226, 255, 146);
+  --neutral-color: rgb(70, 72, 65);
+  --offwhite: rgb(251, 255, 241);
+  --accent-one: rgb(146, 226, 255);
+  --accent-two: rgb(255, 146, 226);
+}
+
+.no-italics {
+  font-style: normal;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.main-content {
+  padding: 3rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-radius: 1.5rem 1.5rem 0 0;
+  color: var(--offwhite);
+  background-color: var(--neutral-color);
+  flex-grow: 1;
+}
+
+.bg-main-color {
+  background-color: var(--main-color);
+}
+
+.bg-offwhite {
+  background: var(--offwhite);
+}
+
+.bg-neutral-color {
+  background-color: var(--neutral-color);
+}
+
+.text-accent-one {
+  color: var(--accent-one);
+}
+
+.text-neutral {
+  color: var(--neutral-color);
+}
+
+.text-offwhite {
+  color: var(--offwhite);
+}
+
+.spin {
+  height: min-content;
+  width: min-content;
+}
+
+.kiwi-logo {
+  font-size: 1rem;
+  margin-right: 0.75rem;
+}
+
+.kiwi-hero {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 6rem;
+}
+
+.spin:hover {
+  animation: spin 1200ms linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rainbow {
+  background-color: #f3ec78;
+  background-image: linear-gradient(90deg, var(--accent-one), var(--accent-two));
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  animation: gradientAnimate 30s linear infinite alternate;
+}
+
+@keyframes gradientAnimate {
+  from {
+    filter: hue-rotate(0deg);
+    background-position-x: 0%;
+  }
+  to {
+    filter: hue-rotate(360deg);
+    background-position-x: 600vw;
+  }
+}
+
+/*INFO: overriding bootstrap colors */
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+  color: var(--neutral-color);
+  background-color: var(--accent-one);
+  border-color: var(--accent-one);
+}
+
+.btn-primary:active,
+.btn-primary:focus {
+  filter: brightness(90%);
+  box-shadow: 0 0 0 0.25rem rgba(146, 226, 255, 0.5) !important;
+}
+
+.btn-outline-secondary {
+  color: var(--neutral-color);
+  border-color: var(--neutral-color);
+}
+
+.btn-outline-secondary:hover,
+.btn-outline-secondary:active,
+.btn-outline-secondary:visited,
+.btn-outline-secondary:focus {
+  color: var(--neutral-color);
+  background-color: var(--accent-two);
+  border-color: var(--accent-two);
+}
+
+.btn-outline-secondary:active,
+.btn-outline-secondary:focus {
+  filter: brightness(90%);
+  color: var(--neutral-color) !important;
+  box-shadow: 0 0 0 0.25rem rgba(255, 146, 226, 0.5) !important;
+}

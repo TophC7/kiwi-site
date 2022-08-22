@@ -1,0 +1,88 @@
+.back-arrow {
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  height: 2rem;
+}
+
+body {
+  overflow: hidden;
+  background-color: var(--main-color);
+}
+
+body k {
+  display: block;
+  font-size: 6rem;
+  width: min-content;
+  height: min-content;
+  position: absolute;
+  -webkit-animation: moveX 4s linear 0s infinite alternate, moveY 6.5s linear 0s infinite alternate;
+  -moz-animation: moveX 4s linear 0s infinite alternate, moveY 6.5s linear 0s infinite alternate;
+  -o-animation: moveX 4s linear 0s infinite alternate, moveY 6.5s linear 0s infinite alternate;
+  animation: moveX 4s linear 0s infinite alternate, moveY 6.5s linear 0s infinite alternate;
+}
+
+@-webkit-keyframes moveX {
+  from {
+    left: -2rem;
+  }
+  to {
+    left: calc(100vw - 6rem);
+  }
+}
+@-moz-keyframes moveX {
+  from {
+    left: -2rem;
+  }
+  to {
+    left: calc(100vw - 6rem);
+  }
+}
+@-o-keyframes moveX {
+  from {
+    left: -2rem;
+  }
+  to {
+    left: calc(100vw - 6rem);
+  }
+}
+@keyframes moveX {
+  from {
+    left: -2rem;
+  }
+  to {
+    left: calc(100vw - 6rem);
+  }
+}
+
+@-webkit-keyframes moveY {
+  from {
+    top: -2rem;
+  }
+  to {
+    top: calc(100vh - 6rem);
+  }
+}
+@-moz-keyframes moveY {
+  from {
+    top: -2rem;
+  }
+  to {
+    top: calc(100vh - 6rem);
+  }
+}
+@-o-keyframes moveY {
+  from {
+    top: -2rem;
+  }
+  to {
+    top: calc(100vh - 6rem);
+  }
+}
+@keyframes moveY {
+  from {
+    top: -2rem;
+  }
+  to {
+    top: calc(100vh - 6rem);
+  }
+}
