@@ -3,37 +3,71 @@
 @tailwind utilities;
 
 @layer components {
+  body,
+  html,
+  #root {
+    @apply m-0 font-SegoeUI text-slate-800;
+  }
+
+  #root {
+    @apply flex h-screen min-w-fit flex-col place-items-center bg-kiwi-500 px-8;
+  }
+
   .spin {
     @apply h-min w-min hover:animate-spin;
   }
 
   .kiwi-logo {
-    @apply mr-3 text-base;
+    @apply spin text-base;
   }
 
   .kiwi-hero {
-    @apply mx-auto text-8xl;
+    @apply spin mx-auto text-8xl;
+  }
+
+  .main-container {
+    @apply h-full w-full max-w-7xl rounded-3xl rounded-b-none bg-kiwiSkin-800 p-8;
+  }
+
+  .main-content {
+    @apply flex flex-col place-items-center gap-4 text-center text-kiwi-200;
+  }
+
+  .title {
+    @apply text-4xl font-semibold;
+  }
+
+  .card {
+    @apply flex flex-col overflow-hidden rounded-lg bg-kiwi-100 text-slate-800;
+  }
+
+  .card-content {
+    @apply flex h-full flex-col place-items-center justify-center gap-4 p-4 text-center;
+  }
+
+  .card-figure {
+    @apply max-h-[50%] min-h-[50%] object-cover;
+  }
+
+  .card-title {
+    @apply text-xl font-medium;
+  }
+
+  .navbar {
+    @apply flex w-full max-w-7xl flex-row place-items-center justify-center gap-4 py-4;
+  }
+
+  .nav-link {
+    @apply text-xl;
   }
 
   .btn-primary {
-    @apply outline-offset box-border rounded-xl bg-kiwiSky-500 py-2 px-5 outline-kiwiSky-300 hover:outline hover:outline-4 focus:outline focus:outline-4;
+    @apply box-border rounded-xl bg-kiwiSky-500 py-2 px-5 outline-offset-[-2px] outline-kiwiSky-300 hover:outline hover:outline-4 focus:outline focus:outline-4;
   }
 
   .btn-outline {
-    @apply outline-offset rounded-xl py-2 px-5 outline outline-2 outline-slate-600 hover:outline-4 focus:bg-kiwiCotton-500 focus:outline-4 focus:outline-kiwiCotton-300;
+    @apply rounded-xl py-2 px-5 outline outline-2 outline-offset-[-2px] outline-slate-800 hover:outline-4 focus:bg-kiwiCotton-500 focus:outline-4 focus:outline-kiwiCotton-300;
   }
-}
-
-body,
-html,
-#root {
-  margin: 0;
-  height: 100vh;
-  font-family: "Segoe UI";
-}
-
-.outline-offset {
-  outline-offset: -2px;
 }
 
 .rainbow {

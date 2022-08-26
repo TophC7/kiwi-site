@@ -5,9 +5,9 @@ export default function Home() {
     <>
       <Navbar />
 
-      <main>
-        <div>
-          <h1>Actinidia deliciosa</h1>
+      <main className="main-container">
+        <div className="main-content">
+          <h1 className="title">Actinidia deliciosa</h1>
           <p>
             Kiwifruit or Chinese gooseberry is the edible berry of several
             species of woody vines in the genus Actinidia. They're oval, about
@@ -24,22 +24,22 @@ export default function Home() {
             Britain and then to California in the 1960s.
           </p>
 
-          <h1>The best two Kiwi types</h1>
-          <div>
-            <div>
-              <img src="/images/golden.jpg" alt="..." />
-              <div>
-                <h5>Golden Kiwi</h5>
+          <h1 className="title">The best two Kiwi types</h1>
+          <div className="grid max-w-lg grid-cols-2 gap-4">
+            <div className="card col-start-1">
+              <img src="/images/golden.jpg" alt="..." className="card-figure" />
+              <div className="card-content">
+                <h2 className=" card-title">Golden Kiwi</h2>
                 <p>
                   Capitalism popped off when they came up with these sweet tangy
                   juicy delicious berry of greateness.
                 </p>
               </div>
             </div>
-            <div>
-              <img src="/images/fuzy.png" alt="..." />
-              <div>
-                <h5>Fuzy Kiwi</h5>
+            <div className="card col-start-2">
+              <img src="/images/fuzy.png" alt="..." className="card-figure" />
+              <div className="card-content">
+                <h2 className="card-title">Fuzy Kiwi</h2>
                 <p>
                   The texture, the color, the fuz, the taste, and the sour skin
                   you NEED to eat. All in all heaven.

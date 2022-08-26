@@ -3,7 +3,7 @@ import Home from "./components/home";
 import Info from "./components/info";
 import "./App.css";
 
-function App() {
+export default function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
@@ -11,5 +11,3 @@ function App() {
     </Routes>
   );
 }
-
-export default App;

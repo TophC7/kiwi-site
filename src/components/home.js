@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
-    <main className="flex h-full place-items-center justify-center bg-kiwi-500 p-8 text-center text-slate-600">
+    <main className="flex h-full place-items-center justify-center bg-kiwi-500 text-center text-slate-800">
       <div id="hero" className=" flex max-w-xl flex-col gap-4">
-        <div className="spin kiwi-hero">🥝</div>
+        <div className="kiwi-hero">🥝</div>
         <div className="rainbow text-5xl font-bold">Kiwis!</div>
         <p className="text-xl font-thin">
           Kiwis are great! They're so good I made this whole page about them.
