@@ -36,7 +36,6 @@
       "last 1 safari version"
     ]
   },
-  "packageManager": "yarn@3.2.3",
   "devDependencies": {
     "autoprefixer": "^10.4.8",
     "postcss": "^8.4.16",
