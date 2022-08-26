@@ -1,3 +1,63 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .spin {
+    @apply h-min w-min hover:animate-spin;
+  }
+
+  .kiwi-logo {
+    @apply mr-3 text-base;
+  }
+
+  .kiwi-hero {
+    @apply mx-auto text-8xl;
+  }
+
+  .btn-primary {
+    @apply outline-offset box-border rounded-xl bg-kiwiSky-500 py-2 px-5 outline-kiwiSky-300 hover:outline hover:outline-4 focus:outline focus:outline-4;
+  }
+
+  .btn-outline {
+    @apply outline-offset rounded-xl py-2 px-5 outline outline-2 outline-slate-600 hover:outline-4 focus:bg-kiwiCotton-500 focus:outline-4 focus:outline-kiwiCotton-300;
+  }
+}
+
+body,
+html,
+#root {
+  margin: 0;
+  height: 100vh;
+  font-family: "Segoe UI";
+}
+
+.outline-offset {
+  outline-offset: -2px;
+}
+
+.rainbow {
+  background-color: #f3ec78;
+  background-image: linear-gradient(
+    90deg,
+    var(--accent-one),
+    var(--accent-two)
+  );
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  animation: gradientAnimate 20s linear infinite alternate;
+}
+
+@keyframes gradientAnimate {
+  from {
+    filter: hue-rotate(0deg);
+    background-position-x: 0%;
+  }
+  to {
+    filter: hue-rotate(360deg);
+    background-position-x: 600vw;
+  }
+}
